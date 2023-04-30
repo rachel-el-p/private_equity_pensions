@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Rachel Phua | Private Equity is Everywhere </title>
+  <meta name="description" content="Journalist" data-react-helmet="true">
+  <meta property="og:title" content="Rachel Phua" data-react-helmet="true">
+  <meta property="og:description" content="Journalist" data-react-helmet="true">
+  <meta property="og:type" content="website" data-react-helmet="true">
+  <meta name="twitter:card" content="summary" data-react-helmet="true">
+  <meta name="twitter:creator" content="rachelphua_el" data-react-helmet="true">
+  <meta name="twitter:title" content="rachelphua_el" data-react-helmet="true">
+  <meta name="twitter:description" content="Journalist" data-react-helmet="true">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
+	<script type="text/javascript">
+		(function() {
+			// only want one resizer on the page
+			if (document.documentElement.className.indexOf("g-resizer-v3-init") > -1) return;
+			document.documentElement.className += " g-resizer-v3-init";
+			// require IE9+
+			if (!("querySelector" in document)) return;
+			function resizer() {
+				var elements = Array.prototype.slice.call(document.querySelectorAll(".g-artboard[data-min-width]")),
+					widthById = {};
+				elements.forEach(function(el) {
+					var parent = el.parentNode,
+						width = widthById[parent.id] || parent.getBoundingClientRect().width,
+						minwidth = el.getAttribute("data-min-width"),
+						maxwidth = el.getAttribute("data-max-width");
+					widthById[parent.id] = width;
+	
+					if (+minwidth <= width && (+maxwidth >= width || maxwidth === null)) {
+						el.style.display = "block";
+					} else {
+						el.style.display = "none";
+					}
+				});
+				try {
+					if (window.parent && window.parent.$) {
+						window.parent.$("body").trigger("resizedcontent", [window]);
+					}
+					if (window.require) {
+						require(['foundation/main'], function() {
+							require(['shared/interactive/instances/app-communicator'], function(AppCommunicator) {
+								AppCommunicator.triggerResize();
+							});
+						});
+					}
+				} catch(e) { console.log(e); }
+			}
+	
+			document.addEventListener('DOMContentLoaded', resizer);
+			// feel free to replace throttle with _.throttle, if available
+			window.addEventListener('resize', throttle(resizer, 200));        
+	
+			function throttle(func, wait) {
+				// from underscore.js
+				var _now = Date.now || function() { return new Date().getTime(); },
+					context, args, result, timeout = null, previous = 0;
+				var later = function() {
+					previous = _now();
+					timeout = null;
+					result = func.apply(context, args);
+					if (!timeout) context = args = null;
+				};
+				return function() {
+					var now = _now(), remaining = wait - (now - previous);
+					context = this;
+					args = arguments;
+					if (remaining <= 0 || remaining > wait) {
+						if (timeout) {
+							clearTimeout(timeout);
+							timeout = null;
+						}
+						previous = now;
+						result = func.apply(context, args);
+						if (!timeout) context = args = null;
+					} else if (!timeout && options.trailing !== false) {
+						timeout = setTimeout(later, remaining);
+					}
+					return result;
+				};
+			}
+	
+		   
+		})();
+	</script>
+	
+    
+
+    <title>Private Equity is Everywhere </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
+
+    <style>
+        
+        .container {
+            /* Remove the line below if you want a wider page */
+          max-width: 800px !important;
+          
+          color: #000000;
+        }
+
+        .title{
+        	font-family: 'PT Serif', serif;
+        	font-size: 40px;
+        	color: #363434;
+        }
+
+		.content{
+            padding: 50px;
+			font-family: 'PT Serif', serif;
+			font-size: 18px;
+			color: #000000;
+		}
+
+		.byline {
+			font-family: 'PT Serif', serif;
+			font-size: 16px;
+			color: #000000;
+		}
+
+		a {
+      color: #000000;
+      background-color: transparent;
+	  text-decoration: underline;
+    }
+
+    a:hover {
+      color: #000000;
+      background-color: transparent;
+      text-decoration: underline;
+      font-size: 19px;
+    }
+
+    .g-pstyle5 {
+  -webkit-text-stroke: 0.25px white;
+  text-stroke: 0.25px white;
+    }
+
+    .g-pstyle4 {
+  -webkit-text-stroke: 0.25px white;
+  text-stroke: 0.25px white;
+    }
+
+    .caption {
+    text-align: center;
+    }
+
+    .photo {
+  display: flex;
+    }
+
+    .placement {
+  flex: 100%;
+    }
+
+    .header {
+  font-size: 32px;
+  padding-left:20px;
+  padding-right:20px;
+    }
+
+    .subhead {
+  font-size: 18px;
+  padding-left:20px;
+  padding-right:30px;
+    }
+
+    h6 {
+  font-size: 10px;
+    }
+
+	.quiz {
+		background-color:rgb(249, 249, 207);
+		inline-size: 200px; 
+  		overflow: hidden;
+		font-size: 22px;
+	}
+
+	.quiz a:hover {
+      color: #000000;
+      background-color: transparent;
+      text-decoration: underline;
+      font-size: 24px;
+    }
+
+	.spoiler {
+		font-size: 40px;
+		text-align: center;
+	}
+
+    .methodology {
+        color:rgb(127, 119, 119);
+        font-size: 15px;
+    }
+</style>
+  </head>
+  <body>
+  <body style="background-color:#ffffff">
+  <section class="section">
+    <div class="container">
+    	<h1 class="title">
+       Private Equity is Everywhere. Why that's troubling.
+      </h1>
+      <div class="photo">
+        <div class="placement">
+          <img src="dunkin_cclicense.jpg" style="width:100%">
+        </div>
+        </div>
+      </div>
+    <h6 class="caption"><em>Dunkin' Donuts and Baskin-Robbins was bought by Arby's owner Roark Capital Group in late-2020 for $11.3 billion. </em></h6>
+      <div class="content">
+        <p class="byline"><a href="https://rachel-el-p.github.io/">By Rachel Phua</a></p>
+        
+        <p>Private equity is everywhere. It owns the coffee shop you get your donuts and coffee from every morning. It sells you your pet’s favorite treat. And it runs the clinic you hope you never need to visit because of the horror stories about astronomical bills. It even rules over you when you die. </p>
+
+        <p>On its own, private equity isn’t bad. These are pools of money run by finance professionals who believe they’re making the best use of the trillions entrusted to them by taking over businesses and improving the way they’re run so they make more money and spend less. Investors — rich families, pension funds, insurance funds, sovereign wealth funds, endowments, and more — who handed them their money earn a tidy sum from the profits these businesses make or when they’re sold at a higher valuation.</p>
+
+        <p>And the finance professionals who made those smart choices get rewarded too, typically with 20% of the profits (sometimes only after meeting a certain performance/profit level) and a 2% annual fee on the value of the businesses they manage, regardless of how the businesses are performing.</p>
+
+        <p>Private equity has grown significantly. There is about <a href="https://www.mckinsey.com/industries/private-equity-and-principal-investors/our-insights/mckinseys-private-markets-annual-review">$11.7 trillion</a> worth of assets under private equity management globally, as of end-June 2022, up from $9.8 trillion the year before. In fact, it has been growing by 20% every year since 2017.</p>
+
+        <p>On average, four of the largest publicly traded private equity firms have more than doubled the value of private equity assets under their management in five years, according to company filings.</p>
+
+        <div class="header"><strong>Private equity assets under managements doubled between 2017 and 2022</strong></div>
+
+<!-- Generated by ai2html v0.115.5 - 2023-04-29 22:32 -->
+<!-- ai file: pe_aum.ai -->
+<style media="screen,print">
+	#g-pe_aum-box ,
+	#g-pe_aum-box .g-artboard {
+		margin:0 auto;
+	}
+	#g-pe_aum-box p {
+		margin:0;
+	}
+	#g-pe_aum-box .g-aiAbs {
+		position:absolute;
+	}
+	#g-pe_aum-box .g-aiImg {
+		position:absolute;
+		top:0;
+		display:block;
+		width:100% !important;
+	}
+	#g-pe_aum-box .g-aiSymbol {
+		position: absolute;
+		box-sizing: border-box;
+	}
+	#g-pe_aum-box .g-aiPointText p { white-space: nowrap; }
+	#g-pe_aum-Artboard_1 {
+		position:relative;
+		overflow:hidden;
+	}
+	#g-pe_aum-Artboard_1 p {
+		font-family:arial,helvetica,sans-serif;
+		line-height:9px;
+		height:auto;
+		opacity:1;
+		letter-spacing:0em;
+		font-size:10px;
+		text-align:left;
+		color:rgb(0,0,0);
+		text-transform:none;
+		padding-bottom:0;
+		padding-top:0;
+		mix-blend-mode:normal;
+		font-style:normal;
+		position:static;
+	}
+	#g-pe_aum-Artboard_1 .g-pstyle0 {
+		line-height:14px;
+		height:14px;
+		font-size:12px;
+	}
+	#g-pe_aum-Artboard_1 .g-pstyle1 {
+		line-height:16px;
+		font-size:13px;
+	}
+	#g-pe_aum-Artboard_1 .g-pstyle2 {
+		font-weight:bold;
+		line-height:17px;
+		font-size:14px;
+	}
+	#g-pe_aum-Artboard_1 .g-pstyle3 {
+		font-weight:bold;
+		line-height:17px;
+		height:17px;
+		font-size:14px;
+	}
+	#g-pe_aum-Artboard_1 .g-pstyle4 {
+		height:9px;
+	}
+	#g-pe_aum-Artboard_1 .g-cstyle0 {
+		font-size:12px;
+	}
+	#g-pe_aum-Artboard_2 {
+		position:relative;
+		overflow:hidden;
+	}
+	#g-pe_aum-Artboard_2 p {
+		font-family:arial,helvetica,sans-serif;
+		line-height:8px;
+		height:auto;
+		opacity:1;
+		letter-spacing:0em;
+		font-size:10px;
+		text-align:left;
+		color:rgb(0,0,0);
+		text-transform:none;
+		padding-bottom:0;
+		padding-top:0;
+		mix-blend-mode:normal;
+		font-style:normal;
+		position:static;
+	}
+	#g-pe_aum-Artboard_2 .g-pstyle0 {
+		line-height:14px;
+		font-size:12px;
+	}
+	#g-pe_aum-Artboard_2 .g-pstyle1 {
+		line-height:14px;
+		height:14px;
+		font-size:12px;
+	}
+	#g-pe_aum-Artboard_2 .g-pstyle2 {
+		line-height:14px;
+		font-size:12px;
+		color:rgb(102,102,102);
+	}
+	#g-pe_aum-Artboard_2 .g-pstyle3 {
+		line-height:14px;
+		height:14px;
+		font-size:12px;
+		color:rgb(102,102,102);
+	}
+	#g-pe_aum-Artboard_2 .g-pstyle4 {
+		height:8px;
+	}
+
+</style>
+
+<div id="g-pe_aum-box" class="ai2html">
+
+	<!-- Artboard: Artboard_1 -->
+	<div id="g-pe_aum-Artboard_1" class="g-artboard" style="width:467px; height:490.080300370922px;" data-aspect-ratio="0.953" data-min-width="467">
+<div style=""></div>
+		<img id="g-pe_aum-Artboard_1-img" class="g-pe_aum-Artboard_1-img g-aiImg" alt="" src="pe_aum-Artboard_1.png"/>
+		<div id="g-ai0-1" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:7.1615%;margin-top:-8.1px;left:84.1328%;width:42px;">
+			<p class="g-pstyle0">289</p>
+		</div>
+		<div id="g-ai0-2" class="g-Layer_1 g-aiAbs" style="top:14.0793%;left:5.8316%;width:26.7666%;">
+			<p class="g-pstyle1">Private equity assets under management (USD, billions)</p>
+		</div>
+		<div id="g-ai0-3" class="g-Layer_1 g-aiAbs" style="top:20.8129%;left:66.1851%;width:26.3383%;">
+			<p class="g-pstyle2">BLACKSTONE</p>
+		</div>
+		<div id="g-ai0-4" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:42.8699%;margin-top:-8.1px;left:84.1328%;width:42px;">
+			<p class="g-pstyle0">165</p>
+		</div>
+		<div id="g-ai0-5" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:44.3072%;margin-top:-10.1px;left:70.8629%;width:52px;">
+			<p class="g-pstyle3">KKR</p>
+		</div>
+		<div id="g-ai0-6" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:60.0189%;margin-top:-10.1px;left:54.6655%;width:87px;">
+			<p class="g-pstyle3">CARLYLE</p>
+		</div>
+		<div id="g-ai0-7" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:60.01%;margin-top:-8.1px;left:84.1328%;width:42px;">
+			<p class="g-pstyle0">105</p>
+		</div>
+		<div id="g-ai0-8" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:60.4181%;margin-top:-8.1px;left:9.7636%;width:42px;">
+			<p class="g-pstyle0">106</p>
+		</div>
+		<div id="g-ai0-9" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:67.3557%;margin-top:-8.1px;left:13.3626%;width:35px;">
+			<p class="g-pstyle0">73</p>
+		</div>
+		<div id="g-ai0-10" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:70.4165%;margin-top:-8.1px;left:84.1328%;width:35px;">
+			<p class="g-pstyle0">69</p>
+		</div>
+		<div id="g-ai0-11" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:71.0286%;margin-top:-8.1px;left:12.958%;width:35px;">
+			<p class="g-pstyle0">72</p>
+		</div>
+		<div id="g-ai0-12" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:73.282%;margin-top:-10.1px;left:66.5096%;width:80px;">
+			<p class="g-pstyle3">APOLLO</p>
+		</div>
+		<div id="g-ai0-13" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:76.7419%;margin-top:-8.1px;left:11.6434%;width:35px;">
+			<p class="g-pstyle0">46</p>
+		</div>
+		<div id="g-ai0-14" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:83.8836%;margin-top:-8.1px;left:12.6451%;width:49px;">
+			<p class="g-pstyle0">2017</p>
+		</div>
+		<div id="g-ai0-15" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:83.8836%;margin-top:-8.1px;left:79.8828%;width:49px;">
+			<p class="g-pstyle0">2022</p>
+		</div>
+		<div id="g-ai0-16" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:96.0535%;margin-top:-14.7px;left:1.4455%;width:379px;">
+			<p class="g-pstyle4">Source: Company filings</p>
+			<p class="g-pstyle4">Note: Carlyle&rsquo;s private equity assets under management only includes corporate </p>
+			<p class="g-pstyle4">private equity and excludes assets in real estate and natural resources<span class="g-cstyle0"> </span></p>
+		</div>
+	</div>
+
+	<!-- Artboard: Artboard_2 -->
+	<div id="g-pe_aum-Artboard_2" class="g-artboard" style="max-width: 254px;max-height: 310px" data-aspect-ratio="0.819" data-min-width="0" data-max-width="466">
+<div style="padding: 0 0 122.1055% 0;"></div>
+		<img id="g-pe_aum-Artboard_2-img" class="g-pe_aum-Artboard_2-img g-aiImg" alt="" src="pe_aum-Artboard_2.png"/>
+		<div id="g-ai1-1" class="g-Layer_1 g-aiAbs" style="top:4.1915%;left:5.339%;width:35.8268%;">
+			<p class="g-pstyle0">Private equity assets under management (USD, billions)</p>
+		</div>
+		<div id="g-ai1-2" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:7.4471%;margin-top:-8.1px;left:89.6625%;width:42px;">
+			<p class="g-pstyle1">289</p>
+		</div>
+		<div id="g-ai1-3" class="g-Layer_1 g-aiAbs" style="top:21.6026%;left:64.3041%;width:36.2205%;">
+			<p class="g-pstyle2">BLACKSTONE</p>
+		</div>
+		<div id="g-ai1-4" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:39.3674%;margin-top:-8.1px;left:89.4964%;width:42px;">
+			<p class="g-pstyle1">165</p>
+		</div>
+		<div id="g-ai1-5" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:41.3019%;margin-top:-8.1px;left:65.1887%;width:47px;">
+			<p class="g-pstyle3">KKR</p>
+		</div>
+		<div id="g-ai1-6" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:50.6523%;margin-top:-8.1px;left:64.026%;width:76px;">
+			<p class="g-pstyle3">CARLYLE</p>
+		</div>
+		<div id="g-ai1-7" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:51.942%;margin-top:-8.1px;left:7.3433%;width:42px;">
+			<p class="g-pstyle1">106</p>
+		</div>
+		<div id="g-ai1-8" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:52.5869%;margin-top:-8.1px;left:89.5372%;width:42px;">
+			<p class="g-pstyle1">105</p>
+		</div>
+		<div id="g-ai1-9" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:58.3906%;margin-top:-8.1px;left:15.8444%;width:35px;">
+			<p class="g-pstyle1">73</p>
+		</div>
+		<div id="g-ai1-10" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:61.9373%;margin-top:-8.1px;left:90.9986%;width:35px;">
+			<p class="g-pstyle1">69</p>
+		</div>
+		<div id="g-ai1-11" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:63.5494%;margin-top:-8.1px;left:9.4231%;width:35px;">
+			<p class="g-pstyle1">72</p>
+		</div>
+		<div id="g-ai1-12" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:64.8391%;margin-top:-8.1px;left:54.2145%;width:70px;">
+			<p class="g-pstyle3">APOLLO</p>
+		</div>
+		<div id="g-ai1-13" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:69.3531%;margin-top:-8.1px;left:19.2664%;width:35px;">
+			<p class="g-pstyle1">46</p>
+		</div>
+		<div id="g-ai1-14" class="g-Layer_1 g-aiAbs" style="top:NaN%;left:9.2694%;width:91.7323%;">
+			<p>&nbsp;</p>
+		</div>
+		<div id="g-ai1-15" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:80.3156%;margin-top:-8.1px;left:14.4803%;width:49px;">
+			<p class="g-pstyle1">2017</p>
+		</div>
+		<div id="g-ai1-16" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:80.3156%;margin-top:-8.1px;left:86.4495%;width:49px;">
+			<p class="g-pstyle1">2022</p>
+		</div>
+		<div id="g-ai1-17" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:93.476%;margin-top:-16.9px;left:0.9855%;width:275px;">
+			<p class="g-pstyle4">Source: Company filings</p>
+			<p class="g-pstyle4">Note: Carlyle&rsquo;s private equity assets under </p>
+			<p class="g-pstyle4">management only includes corporate private equity </p>
+			<p class="g-pstyle4">and excludes assets in real estate and natural resources </p>
+		</div>
+	</div>
+
+</div>
+
+<!-- End ai2html - 2023-04-29 22:32 -->
+<br>
+
+        <p>State-owned institutional investors such as pension funds and sovereign wealth funds, which invest workers' and taxpayers' money, have increased their allocations to private equity over the years. In 2008, about 10% of their assets were put in private equity. In 2020, that swelled to 22%, <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3712690">researchers from</a> the University of Oklahoma and data tracker Global SWF found.</p>
+        
+        <p>This is even though private equity offered lower returns than the S&P500, which you can buy passive index funds in. Private equity returned a <a href="https://www.investmentcouncil.org/wp-content/uploads/2022/07/22AIC002_2022-Report_SA-2226.pdf">median 15.1% annualized return</a> over 10 years between 2012 and 2021, the private equity lobby group American Investment Council reported. Investing in the S&P500 would have given a 16.96% annualized return over the same period, based on calculations of <a href="https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/histretSP.html">historic returns</a> compiled by Aswath Damodaran, a professor of finance at New York University.</a></p>
+
+        <div class="header"><strong>Public pension funds in the U.S. increased their allocations to private equity from 9% to 13% in 10 years </strong></div>
+        <div class="subhead">Three out of the top five U.S. public pension funds invested in private equity in 2021 reduced their allocations to PE over the decade, but CalPERS said at the start of 2023 it plans to increase it to 13%.</div>
+
+<!-- Generated by ai2html v0.115.5 - 2023-04-29 23:49 -->
+<!-- ai file: allocation2012 [Recovered].ai -->
+<style media="screen,print">
+	#g-allocation2012-_Recovered_-box ,
+	#g-allocation2012-_Recovered_-box .g-artboard {
+		margin:0 auto;
+	}
+	#g-allocation2012-_Recovered_-box p {
+		margin:0;
+	}
+	#g-allocation2012-_Recovered_-box .g-aiAbs {
+		position:absolute;
+	}
+	#g-allocation2012-_Recovered_-box .g-aiImg {
+		position:absolute;
+		top:0;
+		display:block;
+		width:100% !important;
+	}
+	#g-allocation2012-_Recovered_-box .g-aiSymbol {
+		position: absolute;
+		box-sizing: border-box;
+	}
+	#g-allocation2012-_Recovered_-box .g-aiPointText p { white-space: nowrap; }
+	#g-allocation2012-_Recovered_-Artboard_1 {
+		position:relative;
+		overflow:hidden;
+	}
+	#g-allocation2012-_Recovered_-Artboard_1 p {
+		font-family:arial,helvetica,sans-serif;
+		line-height:14px;
+		height:auto;
+		opacity:1;
+		letter-spacing:0em;
+		font-size:12px;
+		text-align:left;
+		color:rgb(0,0,0);
+		text-transform:none;
+		padding-bottom:0;
+		padding-top:0;
+		mix-blend-mode:normal;
+		font-style:normal;
+		position:static;
+	}
+	#g-allocation2012-_Recovered_-Artboard_1 .g-pstyle0 {
+		font-weight:bold;
+		line-height:17px;
+		height:17px;
+		font-size:14px;
+	}
+	#g-allocation2012-_Recovered_-Artboard_1 .g-pstyle1 {
+		line-height:9px;
+	}
+	#g-allocation2012-_Recovered_-Artboard_1 .g-pstyle2 {
+		line-height:9px;
+		height:9px;
+		font-size:10px;
+	}
+	#g-allocation2012-_Recovered_-Artboard_1 .g-pstyle3 {
+		line-height:9px;
+		height:9px;
+	}
+	#g-allocation2012-_Recovered_-Artboard_1 .g-pstyle4 {
+		font-weight:bold;
+		line-height:20px;
+		height:20px;
+		font-size:17px;
+	}
+	#g-allocation2012-_Recovered_-Artboard_1 .g-pstyle5 {
+		height:14px;
+	}
+	#g-allocation2012-_Recovered_-Artboard_3 {
+		position:relative;
+		overflow:hidden;
+	}
+	#g-allocation2012-_Recovered_-Artboard_3 p {
+		font-family:arial,helvetica,sans-serif;
+		font-weight:bold;
+		line-height:17px;
+		height:auto;
+		opacity:1;
+		letter-spacing:0em;
+		font-size:14px;
+		text-align:left;
+		color:rgb(0,0,0);
+		text-transform:none;
+		padding-bottom:0;
+		padding-top:0;
+		mix-blend-mode:normal;
+		font-style:normal;
+		position:static;
+	}
+	#g-allocation2012-_Recovered_-Artboard_3 .g-pstyle0 {
+		height:17px;
+	}
+	#g-allocation2012-_Recovered_-Artboard_3 .g-pstyle1 {
+		line-height:9px;
+		font-size:12px;
+	}
+	#g-allocation2012-_Recovered_-Artboard_3 .g-pstyle2 {
+		line-height:9px;
+		height:9px;
+		font-size:10px;
+	}
+	#g-allocation2012-_Recovered_-Artboard_3 .g-pstyle3 {
+		line-height:20px;
+		height:20px;
+		font-size:17px;
+	}
+	#g-allocation2012-_Recovered_-Artboard_3 .g-pstyle4 {
+		line-height:9px;
+		height:9px;
+		font-size:12px;
+	}
+	#g-allocation2012-_Recovered_-Artboard_3 .g-pstyle5 {
+		line-height:12px;
+		height:12px;
+		font-size:10px;
+	}
+
+</style>
+
+<div id="g-allocation2012-_Recovered_-box" class="ai2html">
+
+	<!-- Artboard: Artboard_1 -->
+	<div id="g-allocation2012-_Recovered_-Artboard_1" class="g-artboard" style="width:886px; height:455.908845505151px;" data-aspect-ratio="1.943" data-min-width="886">
+<div style=""></div>
+		<img id="g-allocation2012-_Recovered_-Artboard_1-img" class="g-allocation2012-_Recovered_-Artboard_1-img g-aiImg" alt="" src="allocation2012-_Recovered_-Artboard_1.jpg"/>
+		<div id="g-ai0-1" class="g-graphic g-aiAbs g-aiPointText" style="top:11.0857%;margin-top:-18.5px;left:83.0547%;width:167px;">
+			<p class="g-pstyle0">Average of all </p>
+			<p class="g-pstyle0">public pension funds </p>
+		</div>
+		<div id="g-ai0-2" class="g-graphic g-aiAbs g-aiPointText" style="top:13.3669%;margin-top:-26.9px;left:7.825%;width:149px;">
+			<p class="g-pstyle0">California Public </p>
+			<p class="g-pstyle0">Employees </p>
+			<p class="g-pstyle0">Retirement System</p>
+		</div>
+		<div id="g-ai0-3" class="g-graphic g-aiAbs g-aiPointText" style="top:13.3668%;margin-top:-26.9px;left:22.9846%;width:149px;">
+			<p class="g-pstyle0">California State </p>
+			<p class="g-pstyle0">Teachers&rsquo; </p>
+			<p class="g-pstyle0">Retirement System</p>
+		</div>
+		<div id="g-ai0-4" class="g-graphic g-aiAbs g-aiPointText" style="top:13.3668%;margin-top:-26.9px;left:53.9231%;width:129px;">
+			<p class="g-pstyle0">Texas Teachers </p>
+			<p class="g-pstyle0">Retirement </p>
+			<p class="g-pstyle0">System</p>
+		</div>
+		<div id="g-ai0-5" class="g-graphic g-aiAbs g-aiPointText" style="top:13.3668%;margin-top:-26.9px;left:68.2655%;width:133px;">
+			<p class="g-pstyle0">New York State </p>
+			<p class="g-pstyle0">Common </p>
+			<p class="g-pstyle0">Retirement Fund</p>
+		</div>
+		<div id="g-ai0-6" class="g-graphic g-aiAbs g-aiPointText" style="top:11.5243%;margin-top:-18.5px;left:37.5846%;width:161px;">
+			<p class="g-pstyle0">Washington State </p>
+			<p class="g-pstyle0">Board of Investment </p>
+		</div>
+		<div id="g-ai0-7" class="g-graphic g-aiAbs" style="top:24.1276%;left:3.6053%;width:5.9819%;">
+			<p class="g-pstyle1">PE</p>
+			<p class="g-pstyle1">allocation</p>
+		</div>
+		<div id="g-ai0-8" class="g-graphic g-aiAbs g-aiPointText" style="top:27.7279%;margin-top:-5.4px;left:71.9293%;width:42px;">
+			<p class="g-pstyle2">10%</p>
+		</div>
+		<div id="g-ai0-9" class="g-graphic g-aiAbs g-aiPointText" style="top:27.9474%;margin-top:-5.4px;left:87.4918%;width:36px;">
+			<p class="g-pstyle2">9%</p>
+		</div>
+		<div id="g-ai0-10" class="g-graphic g-aiAbs g-aiPointText" style="top:27.9473%;margin-top:-5.4px;left:56.7138%;width:42px;">
+			<p class="g-pstyle2">12%</p>
+		</div>
+		<div id="g-ai0-11" class="g-graphic g-aiAbs g-aiPointText" style="top:29.0441%;margin-top:-5.4px;left:26.2947%;width:42px;">
+			<p class="g-pstyle2">15%</p>
+		</div>
+		<div id="g-ai0-12" class="g-graphic g-aiAbs g-aiPointText" style="top:29.2633%;margin-top:-5.4px;left:10.9948%;width:50px;">
+			<p class="g-pstyle2">14.5%</p>
+		</div>
+		<div id="g-ai0-13" class="g-graphic g-aiAbs g-aiPointText" style="top:36.2128%;margin-top:-10.1px;left:12.666%;width:57px;">
+			<p class="g-pstyle3">Other </p>
+			<p class="g-pstyle3">assets</p>
+		</div>
+		<div id="g-ai0-14" class="g-graphic g-aiAbs g-aiPointText" style="top:35.6242%;margin-top:-5.4px;left:38.8198%;width:42px;">
+			<p class="g-pstyle2">39%</p>
+		</div>
+		<div id="g-ai0-15" class="g-graphic g-aiAbs g-aiPointText" style="top:38.1638%;margin-top:-12px;left:1.8734%;width:60px;">
+			<p class="g-pstyle4">2012</p>
+		</div>
+		<div id="g-ai0-16" class="g-graphic g-aiAbs g-aiPointText" style="top:57.9971%;margin-top:-5.4px;left:12.6792%;width:36px;">
+			<p class="g-pstyle2">8%</p>
+		</div>
+		<div id="g-ai0-17" class="g-graphic g-aiAbs g-aiPointText" style="top:58.8746%;margin-top:-5.4px;left:26.8251%;width:42px;">
+			<p class="g-pstyle2">12%</p>
+		</div>
+		<div id="g-ai0-18" class="g-graphic g-aiAbs g-aiPointText" style="top:59.0938%;margin-top:-5.4px;left:86.3911%;width:42px;">
+			<p class="g-pstyle2">13%</p>
+		</div>
+		<div id="g-ai0-19" class="g-graphic g-aiAbs g-aiPointText" style="top:59.094%;margin-top:-5.4px;left:71.5572%;width:42px;">
+			<p class="g-pstyle2">13%</p>
+		</div>
+		<div id="g-ai0-20" class="g-graphic g-aiAbs g-aiPointText" style="top:59.5325%;margin-top:-5.4px;left:56.0854%;width:42px;">
+			<p class="g-pstyle2">17%</p>
+		</div>
+		<div id="g-ai0-21" class="g-graphic g-aiAbs g-aiPointText" style="top:67.775%;margin-top:-12px;left:1.8733%;width:60px;">
+			<p class="g-pstyle4">2021</p>
+		</div>
+		<div id="g-ai0-22" class="g-graphic g-aiAbs g-aiPointText" style="top:66.7708%;margin-top:-5.4px;left:38.8135%;width:42px;">
+			<p class="g-pstyle2">38%</p>
+		</div>
+		<div id="g-ai0-23" class="g-graphic g-aiAbs g-aiPointText" style="top:95.6545%;margin-top:-44.1px;left:0.9067%;width:891px;">
+			<p class="g-pstyle5">Source: Equable Institute&rsquo;s calculation of public pension funds&rsquo; asset allocations.</p>
+			<p class="g-pstyle5">Note: Washigton State&rsquo;s allocation ratio is the average of the Washington Law Enforcement Officers&rsquo; and Firefighters Retirement System, </p>
+			<p class="g-pstyle5">Washington Public Employees&rsquo; Retirement System, Washington Public Safety Employees' Retirement System, Washington School Employees' Retirement System, </p>
+			<p class="g-pstyle5">Washington State Patrol Retirement System, and Washington Teachers  Retirement System allocations. </p>
+			<p>&nbsp;</p>
+		</div>
+	</div>
+
+	<!-- Artboard: Artboard_3 -->
+	<div id="g-allocation2012-_Recovered_-Artboard_3" class="g-artboard" style="max-width: 250px;max-height: 1101px" data-aspect-ratio="0.227" data-min-width="0" data-max-width="885">
+<div style="padding: 0 0 440.4585% 0;"></div>
+		<img id="g-allocation2012-_Recovered_-Artboard_3-img" class="g-allocation2012-_Recovered_-Artboard_3-img g-aiImg" alt="" src="allocation2012-_Recovered_-Artboard_3.jpg"/>
+		<div id="g-ai1-1" class="g-graphic g-aiAbs g-aiPointText" style="top:3.6272%;margin-top:-26.9px;left:46.8296%;width:149px;">
+			<p class="g-pstyle0">California Public </p>
+			<p class="g-pstyle0">Employees </p>
+			<p class="g-pstyle0">Retirement System</p>
+		</div>
+		<div id="g-ai1-2" class="g-graphic g-aiAbs" style="top:8.0825%;left:32.6937%;width:21.2%;">
+			<p class="g-pstyle1">PE</p>
+			<p class="g-pstyle1">allocation</p>
+		</div>
+		<div id="g-ai1-3" class="g-graphic g-aiAbs g-aiPointText" style="top:10.2089%;margin-top:-5.4px;left:58.8823%;width:50px;">
+			<p class="g-pstyle2">14.5%</p>
+		</div>
+		<div id="g-ai1-4" class="g-graphic g-aiAbs g-aiPointText" style="top:12.7133%;margin-top:-12px;left:7.1322%;width:60px;">
+			<p class="g-pstyle3">2012</p>
+		</div>
+		<div id="g-ai1-5" class="g-graphic g-aiAbs g-aiPointText" style="top:13.0861%;margin-top:-10.1px;left:64.805%;width:57px;">
+			<p class="g-pstyle4">Other </p>
+			<p class="g-pstyle4">assets</p>
+		</div>
+		<div id="g-ai1-6" class="g-graphic g-aiAbs g-aiPointText" style="top:22.1964%;margin-top:-5.4px;left:64.8519%;width:36px;">
+			<p class="g-pstyle2">8%</p>
+		</div>
+		<div id="g-ai1-7" class="g-graphic g-aiAbs g-aiPointText" style="top:26.1539%;margin-top:-12px;left:7.1322%;width:60px;">
+			<p class="g-pstyle3">2021</p>
+		</div>
+		<div id="g-ai1-8" class="g-graphic g-aiAbs g-aiPointText" style="top:36.4112%;margin-top:-26.9px;left:50.8191%;width:129px;">
+			<p class="g-pstyle0">Texas Teachers </p>
+			<p class="g-pstyle0">Retirement </p>
+			<p class="g-pstyle0">System</p>
+		</div>
+		<div id="g-ai1-9" class="g-graphic g-aiAbs g-aiPointText" style="top:42.5388%;margin-top:-5.4px;left:62.4181%;width:42px;">
+			<p class="g-pstyle2">12%</p>
+		</div>
+		<div id="g-ai1-10" class="g-graphic g-aiAbs g-aiPointText" style="top:46.2238%;margin-top:-12px;left:7.1322%;width:60px;">
+			<p class="g-pstyle3">2012</p>
+		</div>
+		<div id="g-ai1-11" class="g-graphic g-aiAbs g-aiPointText" style="top:55.5253%;margin-top:-5.4px;left:60.1911%;width:42px;">
+			<p class="g-pstyle2">17%</p>
+		</div>
+		<div id="g-ai1-12" class="g-graphic g-aiAbs g-aiPointText" style="top:59.6644%;margin-top:-12px;left:7.1322%;width:60px;">
+			<p class="g-pstyle3">2021</p>
+		</div>
+		<div id="g-ai1-13" class="g-graphic g-aiAbs g-aiPointText" style="top:67.5605%;margin-top:-26.9px;left:51.6611%;width:125px;">
+			<p class="g-pstyle0">Average of all </p>
+			<p class="g-pstyle0">public pension </p>
+			<p class="g-pstyle0">funds </p>
+		</div>
+		<div id="g-ai1-14" class="g-graphic g-aiAbs g-aiPointText" style="top:73.6881%;margin-top:-5.4px;left:64.8585%;width:36px;">
+			<p class="g-pstyle2">9%</p>
+		</div>
+		<div id="g-ai1-15" class="g-graphic g-aiAbs g-aiPointText" style="top:77.1008%;margin-top:-12px;left:7.1322%;width:60px;">
+			<p class="g-pstyle3">2012</p>
+		</div>
+		<div id="g-ai1-16" class="g-graphic g-aiAbs g-aiPointText" style="top:86.5838%;margin-top:-5.4px;left:60.9577%;width:42px;">
+			<p class="g-pstyle2">13%</p>
+		</div>
+		<div id="g-ai1-17" class="g-graphic g-aiAbs g-aiPointText" style="top:90.5413%;margin-top:-12px;left:7.132%;width:60px;">
+			<p class="g-pstyle3">2021</p>
+		</div>
+		<div id="g-ai1-18" class="g-graphic g-aiAbs g-aiPointText" style="top:98.5259%;margin-top:-12.9px;left:2.5775%;width:206px;">
+			<p class="g-pstyle5">Source: Equable Institute&rsquo;s calculation </p>
+			<p class="g-pstyle5">of public pension funds&rsquo; asset allocations.</p>
+		</div>
+	</div>
+
+</div>
+
+<!-- End ai2html - 2023-04-29 23:49 -->
+<br>
+
+        <p> But private equity has gotten a bad rep in the recent decade, and it’s mostly from the leverage buyouts private equity firms have done, which resulted in thousands of job cuts and once-beloved companies going under. 
+
+        <p>Leverage buyouts are when a company — the private equity firm — buys another company using a huge loan and saddles the company they bought with the debt. The company is forced to find ways to repay the loan and the interest on it, often by slashing costs through layoffs, suppressing wages, store closures, fewer product choices, and service cuts. </p>
+
+        <p>When the company still can’t afford to keep up with the debt, they file for bankruptcy. This is what happened to Toys R Us in 2017, 12 years after it was bought by KKR, Bain Capital, and Vornado Realty Trust for $6.6 billion. The toy store said it was struggling to pay off its $5 billion debt while having to find ways to compete against Amazon, Walmart, and other toy retailers. About 33,000 people lost their jobs. Initially, they weren’t given a severance, until their months of protest led to Bain and KKR setting up a $20 million severance fund (Vornado did not contribute). The three private equity firms <a href="https://www.retaildive.com/news/former-toys-r-us-suppliers-allege-execs-directors-took-millions-as-retaile/574095/">made $250 million</a> from Toys R Us during the 12 years they owned it.</p>
+
+        <p>Private equity firms also <a href="https://www.wsj.com/articles/buyout-firms-set-record-for-loading-companies-with-debt-to-pay-themselves-11635156003?mod=article_inline">take out loans</a> on the backs of their target companies to pay themselves billions, a practice called dividend loans.</p>
+
+        <p>Despite the problems private equity has caused, the industry is still lightly regulated and <a href="https://ourfinancialsecurity.org/2023/02/letters-to-regulators-letter-from-29-signers-to-the-sec-on-passing-strong-final-rules-on-private-fund-advisers-to-protect-investors-and-the-financial-system/">firms do not have to disclose</a> how they’ve made their investments, their fees, and how their returns are calculated. Fund managers also manage to pay lower taxes because of a <a href="https://www.motherjones.com/politics/2022/05/carried-interest-loophole-biden-trump-private-equity-tax-break/">loophole</a> both Republican and Democratic presidents have failed to fix. </p>
+
+        <p>Many private equity firms also own chain stores that are able to offer consumers lower prices with economies of scales. For most people, they are inescapable. Can you buy everything you need with $50 and still avoid spending at private equity-owned businesses? </p>
+
+		<div class="quiz">
+        <p><a href="https://rachel-el-p.github.io/pe_game/">Try the quiz here!</a></p></div>
+		<br>
+		<div class="spoiler">
+		<p>Here's how most of the businesses are linked to private equity:</p></div>
+		<div class="caption"><p>Spoilers ahead!</p></div>
+		<p>.</p>
+		<p>.</p>
+		<p>.</p>
+		<p>.</p>
+		<p><strong>Sanderson Farms:</strong> It is the third-largest poultry producer in the U.S. and was bought by agriculture giant Cargill and Continental Grain for <a href="https://www.cargill.com/2021/cargill-and-continental-grain-company-to-acquire-sanderson-farms">$4.5 billion in July 2022.</a> To clean its meat processing factories, Cargill used Packers Sanitation Services, a Blackstone-owned company that employed minors and now subject to a <a href="https://www.dol.gov/newsroom/releases/whd/whd20230217-1">Department of Labor investigation.</a></p>
+        <p><strong>Just Bare:</strong> Just Bare is <a href="https://jbsfoodsgroup.com/our-brands">one of the brands under JBS</a>, another global poultry producer that also used Packers Sanitation Services to clean it meat processing plants.
+        <p><strong>Prison:</strong> Prisons across the U.S., including the ones in <a href="https://www.nyc.gov/site/doc/media/commissary-operations.page">New York City</a>, outsource their commissary services to private equity-owned companies like <a href="https://www.vice.com/en/article/7bmwgq/why-are-prisoners-paying-for-their-own-incarceration">Keefe Group</a> and <a href="https://www.vice.com/en/article/7bmwgq/why-are-prisoners-paying-for-their-own-incarceration">Trinity Services Group</a>. Both Keefe Group and Trinity Services Group are owned by private equity firm H.I.G. Capital, under TKC Holdings. It has <a href="https://pestakeholder.org/wp-content/uploads/2019/10/HIG-Capital-Prison-Food-Commissary-PESP-103019.pdf">been accused</a> of serving poor-quality food to push inmates to buy more food from the commissary. They have <a href="https://www.nytimes.com/2022/11/02/opinion/inflation-prison.html">hiked prices of items</a> sold in prison even though prisoners earn sub-minimum wages. </p>
+		<p><strong>Dunkin’ Donuts:</strong> Dunkin' Donuts was brought private by Roark Capital in December 2020 in a deal worth $11.3 billion. Roark Capital <a href="https://pestakeholder.org/wp-content/uploads/2021/04/Insire-Brands-memo-on-15-wage.pdf">said in a memo</a> they "were successful in our advocacy efforts to remove the Raise the Wage Act," which would have guaranteed a federal $15 minimum wage.
+		<p><strong>Auntie Anne's:</strong> Auntie Anne's is also owned by Roark Capital, which bought the <a href="https://www.roarkcapital.com/files/FOCUS%20Brands%20Completes%20Purchase%20of%20Auntie%20Anne's%20FINAL.pdf">pretzel chain in 2010.</a>
+		<p><strong>Arizona Iced Tea:</strong> KKR-owned bottling company Refresco helps to make Arizona Iced Tea. The Refresco plant in Wharton, New Jersey, was fined <a href="https://www.osha.gov/ords/imis/establishment.search?p_logger=1&establishment=refresco&State=NJ&officetype=all&Office=all&sitezip=&p_case=all&p_violations_exist=all&startmonth=06&startday=08&startyear=2021&endmonth=06&endday=08&endyear=2022">$60,000 by</a> the Occupational Safety and Health Administration for workplace safety violations. KKR, which took over Refresco in 2022, has not improved working conditions, <a href="https://www.levernews.com/at-this-jersey-factory-pension-backed-private-equity-takes-on-union-workers/">workers and their union say,</a> and has been accused of refusing to bargain with the union representing the workers on their first contract.
+		<p><strong>PetSmart</strong> Since 2014, PetSmart has been owned by private equity firm BC Partners, which also owns online pet store Chewy. Workers say their stores are understaffed and that the company <a href="https://www.vice.com/en/article/3ab4ek/some-understaffed-petsmarts-are-dealing-with-freezers-overfilled-with-dead-pets">doesn't care if the pets die.</a>
+		<p><strong>Ol' Roy</strong> Ol' Roy is Walmart's private label dog food brand, named after <a href="https://www.walmartmuseum.com/content/walmartmuseum/en_us/blog/ol--roy.html">Walmart's founder Sam Walton's pet dog.</a> While a Walmart brand, Ol' Roy's products are made by <a href="https://www.businesswire.com/news/home/20170226005246/en/KKR-Invests-in-China%E2%80%99s-Gambol-Pet-Group">Gambol Pet Group,</a> a Chinese pet food maker backed by KKR. Walmart itself is known to be <a href="https://www.cbsnews.com/news/union-walmart-shut-5-stores-over-labor-activism/">hostile to unions.</a>
+		<div class="methodology">
+		<p>-------------</p>
+			<p><strong>Methodology:</strong> For the first chart, I looked at SEC company filings from the four biggest publicly traded private equity firms (they also invest in other alternative assets, but are often classified as private equity firms) and how much of private equity assets they managed. </p> 
+    
+    <p>For the second chart, I looked at <a href="https://equable.org/public-retirement-research-database/">data compiled</a> by the Equable Institute on the allocations of public pension funds in the U.S. to private equity, and chose the five pension funds that allocated the most to private equity, according to the American Investment Council. </p>
+    
+    <p>For the game, I looked at prices listed on the company's online store and pictures of menus. Here are the prices of most items: (a) <a href="https://www.lidl.com/products/1152237">Sanderson Farms' chicken</a> sold at Lidl; <a href="https://www.amazon.com/Just-BARE-Chicken-without-Antibiotics/dp/B00CIIKRR8/ref=sr_1_7_f3_wg?almBrandId=QW1hem9uIEZyZXNo&crid=1S7E5LU81NDID&fpw=alm&keywords=chicken&qid=1682393816&s=amazonfresh&sprefix=chicken%2Camazonfresh%2C95&sr=1-7">Just Bare chicken</a> sold on Amazon Fresh; <a href="https://www.greentablefarms.net/food">Organic New York farm-raised chicken</a> from Green Table Farms, which sells at farmer's markets in the city; <a href="https://www.cnbc.com/2022/10/13/arizona-iced-tea-ceo-vows-to-keep-99-cent-price-tag.html">Arizona Iced Tea</a>; <a href="https://www.petsmart.com/dog/treats/chewy-treats/simply-nourish-soft-chews-original-dog-protein-stick-treat---bacon-and-cheese-73470.html?cgid=100268&fmethod=Browse"> PetSmart's Bacon & Cheese soft chews</a>; <a href="https://www.walmart.com/ip/Ol-Roy-Bacon-Cheese-Munchy-Bone-Treats-for-Dogs-7-Count/357269024?athbdg=L1102&from=browseResults">Ol' Roy bacon and cheese dog treats</a> sold at Walmart; a classic <a href="https://www.caninestyles.com/collections/dog-treats/products/thick-bully-stick">12-inch dog chew</a> sold at Canine Styles, a NYC-based shop with a few stores around the city. 
+    </p>
+
+	<p>Making these charts were new to me — I didn't really know how to use them before we had a lecture on ways to show proportion over time, so I'm glad I got the chance to make them. I used Flourish and Rawgraphs, and exported the svg files to Adobe Illustrator to tweak them.</p>
+
+	<p>It's my first time making a narrative game too. I looked at prices listed on the company's online store and pictures of menus to make it.</p>
+	<p>Using Twine was quite intuitive, although I don't know how to rename different pages in the same name (i.e. There are different tallies even though a player ends up choosing the same type of product at the end as someone else, so there needs to be two different pages) so I ended up numbering the choices.</p>
+		<p><a href="https://github.com/rachel-el-p/private_equity_and_pensions">Here is my repository.</a> </p></div>
+      </div>
+    </div>
+  </section>
+  </body>
+</html> 
